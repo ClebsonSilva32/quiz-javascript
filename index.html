@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Configuração de caracteres para suportar acentos -->
+    <meta charset="UTF-8">
+    
+    <!-- Responsividade: faz o layout se adaptar a celulares -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Arquivo de estilos da página -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Título exibido na aba do navegador -->
+    <title>Quiz JavaScript</title>
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<!-- Cabeçalho principal contendo o título da aplicação -->
+<header class="container">
+    <h1 class="logo">Quiz JavaScript</h1>
+</header>
+
+<!-- ================= CONTEÚDO PRINCIPAL ================= -->
+<!-- Elemento principal da página (boa prática semântica) -->
+<main id="topo">
+
+    <!-- Texto introdutório explicando o objetivo do projeto -->
+    <div>
+        <p>Projeto criado apenas para praticar HTML + JAVASCRIPT (DOM)</p>
+    </div>
+               
+    <!-- Botão que futuramente exibirá alguma informação extra ao usuário -->
+    <div class="botao-descubra">
+        <button class="btn-descubra" id="button">Descobrir Resultado</button>
+        <!-- Área onde o resultado do botão acima será exibido via JavaScript -->
+        <p id="descobrir"></p>
+    </div>
+       
+    <!-- ================= CARD DO QUIZ ================= -->
+    <!-- Container visual que representa a área principal do quiz -->
+    <div class="card-principal">
+        <article>
+            <!-- Pergunta principal do quiz -->
+            <h2>Responda o quiz sobre Desenvolvimento Web!</h2>
+
+            <!-- Texto da pergunta -->
+            <p class="titulo-quiz">
+                Qual linguagem de programação interage diretamente no navegador?
+            </p>
+
+            <!-- Local onde será exibida a mensagem de acerto ou erro -->
+            <p id="resultado"></p>
+
+            <!-- Botões de resposta do quiz -->
+            <!-- data-correta indica qual é a resposta certa (usado no JavaScript) -->
+            <button class="opcao" data-correta="true">JavaScript</button>
+            <button class="opcao" data-correta="false">PHP</button>
+            <button class="opcao" data-correta="false">Java</button>
+            <button class="opcao" data-correta="false">C#</button>
+
+            <!-- Botão para reiniciar o quiz -->
+            <button id="reiniciar" class="reiniciar-btn">Reiniciar Quiz</button>
+        </article>
+    </div>
+
+    <!-- ================= BOTÃO VOLTAR AO TOPO ================= -->
+    <!-- Botão fixo que leva o usuário de volta ao início da página -->
+    <div class="container-btn-topo">
+        <button class="btn-topo" id="btnTopo">Ir ao topo</button>
+    </div>
+
+</main>
+
+<!-- Arquivo JavaScript responsável pelas interações da página -->
+<script src="script.js"></script>
+
+</body>
+</html>
